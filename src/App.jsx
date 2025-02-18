@@ -116,7 +116,7 @@ function App() {
       {message}
       <h3>Your Team:</h3>
       {team.length===0? "Add fighters to your team":""}
-
+      <ul>
       {team.map((t)=>(
         <div>
             <li>
@@ -129,7 +129,9 @@ function App() {
         <button onClick={() => handleRemoveFighter(t)}>Delete</button>    
             </div>
       ))}
+      </ul>
       <hr />       <hr />
+      <ul>
       {zombieFighters.map(zombieFighter => (
         <Card
           zombieFighter={zombieFighter}
@@ -141,6 +143,7 @@ function App() {
           handleAddFighter={handleAddFighter}
         />
       ))}
+      </ul>
 
     </>
   )

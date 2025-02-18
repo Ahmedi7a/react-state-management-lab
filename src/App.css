@@ -43,9 +43,23 @@
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
 }
 
 li {
   list-style: none;
   margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
